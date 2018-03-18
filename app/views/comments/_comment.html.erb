@@ -1,0 +1,17 @@
+<div style="background-color:#ffffcc; border-style: solid; border-width: 1px; border-color: black; border-radius: 5px; margin: 5px; padding: 3px">
+	<p>
+	  <strong>Commenter:</strong>
+	  <%= comment.commenter %>
+	</p>
+	 
+	<p>
+	  <strong>Comment:</strong>
+	  <%= comment.body %>
+	</p>
+	 
+	<p>
+	  <%= link_to 'Destroy Comment', [comment.article, comment],
+				   method: :delete,
+				   data: { confirm: 'Are you sure?' } %>
+	</p>
+</div>

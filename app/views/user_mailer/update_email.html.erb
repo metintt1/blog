@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Your data on example.com updated, <%= @user.name %></h1>
+    <p>
+      Your account data on www.blog.de has been successfully changed,
+      Your login is: <%= @user.login %>.<br>
+      Your username is: <%= @user.name %>.<br>
+      Updated at: <%= @user.updated_at %>.<br>
+    </p>
+    <p>
+      To login to the site, just follow this link: <%= @url %>.
+    </p>
+    <p>Thanks for all and have a great day!</p>
+  </body>
+</html>
